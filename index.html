@@ -1,155 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head> 
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <div>
-            <marquee behavior="veryslow" direction="right" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-                Informatii suplimentare la numarul de telefon 0040 749 680 770
-            </marquee>
-        </div>
+        <marquee behavior="veryslow" direction="right" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+            Informatii suplimentare la numarul de telefon 0040 749 680 770
+        </marquee>
     </header>
-    <div class="logo-meniu">
-        <div id="logo">
-            <a href="http://www.turistintransilvania.com" title="Turist in Transilvania">
-                <img src="images/pngfind.com-nature-png-images-1625882.png" alt="logo nature"> 
-            </a> 
-        </div>
-        <div class="dropdown">
-            <a href="http://www.turistintransilvania.com" title="Turist in Transilvania">
-                <button class="button-meniu">
-                    Poze din natura
-                </button>
-            </a>
-            <div class="dropdown-content">
-                <button class="button-meniu">
-                    <a href="http://www.gandul.ro">Poze iarna</a>
-                </button>
-                <button class="button-meniu">
-                    <a href="http://www.protv.ro">Poze vara</a>
-                </button>
+    <div class="menu-container">
+        <div class="logo-meniu">
+            <div id="logo">
+                <a href="#">
+                    <img src="images/pngfind.com-nature-png-images-1625882.png" alt="logo nature"> 
+                </a> 
             </div>
-        </div> 
-        <div>
-            <a href="http://www.turistintransilvania.com" title="Turist in Transilvania">
-                <button class="button-meniu">
-                    Locuri de vis
-                </button>
-            </a>
-        </div>
-        <div>
-            <a href="http://www.turistintransilvania.com" title="Turist in Transilvania">
-                <button class="button-meniu">                        
-                    Video din natură
-                </button>
-            </a>
-        </div>
-        <div>
-            <a href="http://www.turistintransilvania.com" title="Turist in Transilvania">
-                <button class="button-meniu">
-                    Cazare
-                </button>
-            </a>
-        </div>
-        <div>
-            <a href="http://www.turistintransilvania.com" title="Turist in Transilvania">
-                <Button class="button-meniu">
-                    Descopera
-                </Button>
-            </a>
-        </div> 
-    </div>
-    <div class="image-child">
-        <div class="image-wraper">
-            <img src="images/panorama.jpeg" alt="panorama lac" id="panoramaimg">
+            <nav class="menu">
+                <ul>
+                    <li><a href="https://www.pexels.com/search/nature%20romania/">Poze</a></li>
+                    <li><a href="#">Locuri</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Cazare</a></li>
+                    <li><a href="#">Descoperă</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle">🌙</button>
         </div>
     </div>
-    <div class="image-parent">  
+
+    <div class="image-parent">
         <div class="image-child">
-            <div class="image-wraper">
-                <img src="images/peisaj2.jpeg" alt="peisaj natura 2"  >
+            <div class="image-wrapper">
+                <img src="images/peisaj2.jpeg" alt="Peisaj Mosna" class="lightbox-trigger">
             </div>
-            <h2 class="article-title">Peisaj Mosna</h2> 
-            <p class="article-description"> 
-                It is a long established fact that 
-                a reader will be distracted by the readable content of a page when 
-                looking at its layout. The point of using Lorem Ipsum is that it has 
-                a more-or-less normal distribution of letters, as opposed to using 
-                'Content here, content here', making it look like readable English. 
-            </p>
-            <a  title="google.com"
-                class="article-button"
-                href="http://www.google.com" 
-                target="_blank"
-            >   
-                Vezi mai multe
-            </a>
+            <h2 class="article-title">Peisaj Mosna</h2>
+            <p class="article-description">Un peisaj minunat de explorat.</p>
+            <button class="article-button">Vezi mai multe</button>
         </div>
+
         <div class="image-child">
-            <div class="image-wraper">
-                <img src="images/axente.jpeg" alt="peisaj axente">
+            <div class="image-wrapper">
+                <img src="images/axente.jpeg" alt="Peisaj Axente" class="lightbox-trigger">
             </div>
-            <h2 class="article-title">Peisaj Axente</h2> 
-            <p class="article-description"> 
-                It is a long established fact that 
-                a reader will be distracted by the readable content of a page when 
-                looking at its layout. The point of using Lorem Ipsum is that it has 
-                a more-or-less normal distribution of letters, as opposed to using 
-                'Content here, content here', making it look like readable English. 
-            </p>
-            <a  title="google.com"
-                class="article-button"
-                href="http://www.google.com" 
-                target="_blank"
-            >   
-                Vezi mai multe
-            </a>
+            <h2 class="article-title">Peisaj Axente</h2>
+            <p class="article-description">Locuri spectaculoase de descoperit.</p>
+            <button class="article-button">Vezi mai multe</button>
         </div>
+
         <div class="image-child">
-            <div class="image-wraper">
-                <img src="images/bivoli.jpeg" alt="peisaj natura 2">
+            <div class="image-wrapper">
+                <img src="images/bivoli.jpeg" alt="Peisaj Natură" class="lightbox-trigger">
             </div>
-            <h2 class="article-title">Peisaj natura</h2> 
-            <p class="article-description"> 
-                It is a long established fact that 
-                a reader will be distracted by the readable content of a page when 
-                looking at its layout. The point of using Lorem Ipsum is that it has 
-                a more-or-less normal distribution of letters, as opposed to using 
-                'Content here, content here', making it look like readable English. 
-            </p>
-            <a  title="google.com"
-                class="article-button"
-                href="http://www.google.com" 
-                target="_blank" 
-            >   
-                Vezi mai multe detalii 2
-            </a>
+            <h2 class="article-title">Peisaj Natură</h2>
+            <p class="article-description">Oază de liniște și frumusețe naturală.</p>
+            <button class="article-button">Vezi mai multe</button>
         </div>
     </div>
-    <div class="image-child">
-        <div class="image-wraper">
-            <video src="videos/natura.mp4" type="video/mp4"  title="real nature" id="video" autoplay muted>
-            </video>
-        </div> 
+
+    <div class="video-container">
+        <video controls autoplay muted loop>
+            <source src="videos/natura.mp4" type="video/mp4">
+            Browserul tău nu suportă tagul video.
+        </video>
     </div>
-    <div class="logo-meniu">
-        <button class="button-meniu">
-            <a class="a-link" href="https://booking.turistintransilvania.com/ro/despre-noi/">
-                Despre noi 
-            </a>
-        </button>
-        <button class="button-meniu" id="special-button">
-            <a class="a-link" href="contact@turistintransilvania.com">
-                Email: contact@turistintransilvania.com
-            </a>
-        </button>
-        <button class="button-meniu">
-            <a class="a-link" href="https://booking.turistintransilvania.com/ro/termeni-si-conditii/">
-                Termeni si conditii
-            </a> 
-        </button>
-    </div>
+
+    <footer>
+        © 2025 Turist în Transilvania | <a href="https://www.turistintransilvania.com/ro/" class="underline">Contact</a>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
